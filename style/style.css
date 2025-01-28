@@ -6,7 +6,10 @@
  
   font-style: normal;
 }
+main{
+    background-image: url('../assets/bg.png');
 
+}
 /* shared style */
 /* btn-style */
 .btn-primary{
@@ -17,6 +20,15 @@
     font-weight: 500;
     font-size: 1.25rem;
     padding: 10px 60px;
+}
+.btn-2nd{
+    background-color: black;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 40px;
+    color: white;
 }
 /* color-1 */
 .color-orange{
@@ -72,8 +84,27 @@
     display: none;
 }
 
+/* main part hero section */
+.hero-container{
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.hero-description{
+    font-size: 1.25rem;
 
-
+}
+.hero-img{
+    max-width: 100%;
+  
+}
 /* media queries */
 @media screen and (max-width:676px) {
 .header-container{
@@ -101,4 +132,19 @@
     .school-logo{
         justify-content: flex-start;
     }
+    .hero-container{
+    
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+      
+    }
+    .hero-img{
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-img img{
+        max-width: 90%;
+    }
+    
 }
