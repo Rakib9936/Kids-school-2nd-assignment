@@ -45,6 +45,10 @@
 .color-violet{
     color: #5D58EF;
 }
+.heading{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
 /* Header style */
 
 .header-container{
@@ -124,10 +128,7 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.curriculum-heading{
-    font-weight: 700;
-    font-size: 2.8rem;
-}
+
 .curriculum-card{
     height: 350px;
     max-width: 300px;
@@ -165,6 +166,44 @@ font-size: 1.28rem;
     border: none;
     font-weight: 700;
     font-size: 1rem;
+}
+/* story section style */
+.our-story{
+    text-align: center;
+    width: 100%;
+    background-image: url('../assets/bg.png');
+    background: linear-gradient(to top,rgb(228, 208, 174), transparent);
+
+}
+
+
+.story-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    
+   
+}
+.story-container-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    gap: 20px;
+}
+.story-1{
+   
+    max-width: 540px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+   
+} 
+.story-insite{
+    padding: 30px;
 }
 
 
