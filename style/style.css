@@ -65,3 +65,40 @@
     font-weight: 700;
     font-size:1.25rem ;
 }
+.category-icon{
+    display: none;
+}
+.hr-line{
+    display: none;
+}
+
+
+
+/* media queries */
+@media screen and (max-width:676px) {
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+    .school,
+    .nav-container,
+    .contact
+     {
+        display: none;
+    }
+    .category-icon{
+        display: block;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .hr-line{
+        display: block;
+        border: 2px solid #FEA301;
+        width: 100%;
+    }
+    .school-logo{
+        justify-content: flex-start;
+    }
+}
