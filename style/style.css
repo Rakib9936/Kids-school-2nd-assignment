@@ -190,6 +190,7 @@ font-size: 1.28rem;
     width: 100%;
     background-image: url('../assets/bg.png');
     background: linear-gradient(to top,rgb(228, 208, 174), transparent);
+   
 
 }
 
@@ -242,13 +243,64 @@ font-size: 1.28rem;
 .grid-story h4{
     padding: 10px;
 }
-/* footer style */
-.footer-container{
-    display: flex;
+.view{
+    margin-bottom: 100px;
 }
+/* footer style */
 
+.footer-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-logo{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+   
+}
+.footer-logo h3{
+font-weight: 700;
+font-size: 1.8rem;
+
+}
+.footer-school{
+    max-width: 340px;
+}
+.footer-school p{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin-top: -10px;
+}
+.about-school{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+     text-align:left; 
+    color: #FFFFFF;
+}
+.about-school ul  li {
+list-style: none;
+margin-bottom:10px ;
+
+
+}
+.about-school ul  li h5{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.footer-icon h4{ 
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+ 
+
+}
 /* media queries */
-@media screen and (max-width:676px) {
+@media screen and (max-width:576px) {
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -300,5 +352,27 @@ font-size: 1.28rem;
         grid-template-columns: repeat(2 1fr);
      } 
  
-      
+      .footer-container {
+        width: 100%;
+        flex-direction: column;
+       align-items: flex-start;
+       padding: 30px;
+       text-align: left;
+       
+      }
+      .footer-school, 
+    .about-school, 
+    .footer-icon {
+        width: 100%; 
+        text-align: left; 
+        margin-bottom: 20px; 
+    }
+
+    .about-school ul {
+        padding: 0; 
+    }
+
+    .about-school ul li {
+        text-align: left; 
+    }
 }
